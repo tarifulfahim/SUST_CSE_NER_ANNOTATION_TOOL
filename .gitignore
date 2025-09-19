@@ -48,3 +48,4 @@ banglabert_type_dataset.jsonl
 !ner_lines.bn
 !test_data.txt
 
+*.jsonl
