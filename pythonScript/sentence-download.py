@@ -49,8 +49,8 @@ def save_to_json(data: List[Dict[str, Any]], filename: str = "tag_sentences_no_v
 
 def main():
     # Configuration - Update these values according to your MongoDB setup
-    CONNECTION_STRING = "mongodb+srv://Fahim:Fahim@nerdb.1ysm2b8.mongodb.net/ner?retryWrites=true&w=majority"
-    DATABASE_NAME = "ner"
+    CONNECTION_STRING = process.env("MONGO_URI") 
+    DATABASE_NAME = process.env("DATABASE_NAME")
     OUTPUT_FILE = "tag_sentences.json"
 
     # Connect to MongoDB
